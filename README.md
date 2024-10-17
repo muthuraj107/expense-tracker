@@ -32,4 +32,4 @@ The Expense Tracker is a web application designed to help users track their spen
 1. Clone the repository:
 
    ```bash
-   git clone 
+   git clone https://github.com/muthuraj107/expense-tracker.git
