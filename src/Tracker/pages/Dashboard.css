@@ -1,0 +1,184 @@
+.dashboard-body .dashboard-lead {
+    margin: 20px 0 30px 10px;
+}
+
+.dashboard-lead h2 {
+    font-size: 30px;
+    color: black;
+}
+
+.greeting {
+    font-size: 40px; /* Set font size for greeting */
+    color: #555; /* Dark grey color */
+    margin-top: 5px; /* Margin for spacing */
+}
+
+.expense-card {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: space-around; /* Center cards */
+    width: 100%; /* Full width */
+    max-width: 900px; /* Maximum width */
+    height: auto;
+}
+
+.expense-card .card {
+    flex: 1; /* Allow cards to take equal space */
+    min-width: 200px; /* Minimum width for cards */
+    max-width: 250px; /* Maximum width for cards */
+    background: #fdfdfd;
+    box-shadow: 6.6px 13.1px 13.1px hsl(0deg 0% 0% / 0.30);
+    display: flex;
+    padding: 20px 0 20px 10px;
+    border-radius: 15px;
+    flex-direction: row;
+    gap: 20px; /* Reduced gap for better alignment */
+    margin-bottom: 20px; /* Space below each card */
+}
+
+.expense-card .card1 {
+    width: 250px; /* Fixed width for card1 */
+}
+
+.expense-card .card .card-data p {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.expense-card .card .card-data {
+    font-size: 17px;
+}
+
+.today {
+    margin-top: 70px;
+    width: 100%; /* Full width of the container */
+}
+
+.today h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Styling the table */
+.today .today-table {
+    margin: 0 auto; /* Center the table within the container */
+    width: 80%; /* Limit the width of the table to 80% of the container */
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+    margin-top: 30px;
+}
+
+.today .today-table table {
+    width: 100%; /* Table takes full width of the container */
+    border-collapse: separate; /* Allow margin to take effect */
+    border-spacing: 0 15px; /* Set the vertical gap between rows */
+}
+
+/* Style for each row */
+.today .today-table .table-row {
+    background-color: #f2f2f2; /* Same background color for all rows */
+}
+
+/* Style for each cell */
+.today .today-table td {
+    padding: 10px; /* Add padding to table cells */
+    text-align: left; /* Align text to the left */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .dashboard-body .dashboard-lead {
+        margin: 10px 0 20px 5px;
+    }
+
+    .dashboard-lead h2 {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+
+    .greeting {
+        font-size: 30px; /* Smaller font size for greeting */
+    }
+
+    .expense-card {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+        width: 100%; /* Full width on mobile */
+        margin-top: 20px; /* Reduced margin for spacing */
+    }
+
+    .expense-card .card {
+        width: 90%; /* Make cards wider */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .today {
+        width: 90%; /* Make today section full width */
+        margin: 20px auto; /* Center it on the page */
+    }
+
+    .today h3 {
+        font-size: 20px; /* Smaller font size */
+        margin: 15px 0; /* Adjust margins */
+    }
+
+    .today .today-table {
+        width: 95%; /* Make the table wider on small screens */
+    }
+
+    .today .today-table table {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .today .today-table td {
+        padding: 8px; /* Reduce padding on small screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .dashboard-body .dashboard-lead {
+        margin: 10px 0 20px 5px;
+    }
+
+    .dashboard-lead h2 {
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+
+    .greeting {
+        font-size: 18px; /* Even smaller font size for greeting */
+    }
+
+    .expense-card {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+        width: 100%; /* Full width on mobile */
+        margin-top: 20px; /* Reduced margin for spacing */
+    }
+
+    .expense-card .card {
+        width: 90%; /* Make cards wider */
+        margin-bottom: 15px; /* Space between cards */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .today {
+        width: 95%; /* Make today section full width */
+        margin: 20px auto; /* Center it on the page */
+    }
+
+    .today h3 {
+        font-size: 18px; /* Smaller font size */
+        margin: 10px 0; /* Adjust margins */
+    }
+
+    .today .today-table {
+        width: 95%; /* Make the table wider on small screens */
+    }
+
+    .today .today-table table {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    .today .today-table td {
+        padding: 6px; /* Further reduce padding on small screens */
+    }
+}

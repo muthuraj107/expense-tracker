@@ -1,0 +1,191 @@
+/* General styles */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+section .leadhistory {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 24px; /* Increased font size for better visibility */
+}
+
+.addexpense {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.addexpense a {
+  padding: 0.6rem 1rem;
+  background-color: skyblue;
+  border-radius: 10px;
+  font-size: 16px; /* Ensuring the button text is legible */
+}
+
+.addexpense a:hover {
+  color: #333;
+  background-color: rgba(135, 206, 235, 0.7);
+}
+
+/* Month and Year Filter Styles */
+.month-filter {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  align-items: center;
+  justify-content: center; /* Centered for larger screens */
+  margin: 20px 0; /* Add some margin for spacing */
+}
+
+.month-filter label {
+  margin-right: 10px; /* Space between label and select */
+  font-size: 16px; /* Increased font size for better readability */
+}
+
+.month-filter select {
+  padding: 0.5rem; /* Padding for dropdown */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px; /* Space between select elements */
+  font-size: 16px; /* Increased font size for better readability */
+  min-width: 120px; /* Ensure dropdowns have minimum width */
+}
+
+/* Total Spent Styles */
+.total-spent {
+  margin-left: 20px; /* Space between the select and total spent text */
+  font-weight: bold; /* Make the total amount bold */
+  font-size: 18px; /* Increased font size for better visibility */
+}
+
+/* Table Styles */
+.table table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.table table th {
+  padding: 10px;
+  text-align: left;
+}
+
+.table table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.table table th {
+  background-color: #f0f0f0;
+}
+
+.table table td {
+  background-color: #fff;
+}
+
+.table th:first-child,
+.table td:first-child {
+  padding-left: 20px;
+}
+
+.table th:last-child,
+.table td:last-child {
+  padding-right: 20px;
+}
+
+.table table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table table tr:hover {
+  background-color: #f2f2f2;
+}
+
+.table th {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.table td {
+  font-size: 14px;
+  color: #666;
+}
+
+.delete-button {
+  background-color: #ff4d4d; /* Red color for delete button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #e60000; /* Darker red on hover */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .month-filter {
+    flex-direction: column; /* Stack vertically on smaller screens */
+    align-items: flex-start; /* Align items to start */
+  }
+
+  .month-filter label {
+    margin-bottom: 10px; /* Space below the label */
+    font-size: 14px; /* Slightly smaller font size */
+  }
+
+  .month-filter select {
+    margin-bottom: 10px; /* Space below select for better spacing */
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .total-spent {
+    margin-left: 0; /* Remove left margin for small screens */
+    margin-top: 10px; /* Add margin on top for better spacing */
+  }
+
+  .table table th,
+  .table table td {
+    font-size: 12px; /* Smaller font size for table headers and cells */
+    padding: 8px; /* Less padding for table cells */
+  }
+
+  .delete-button {
+    font-size: 12px; /* Smaller font for mobile */
+    padding: 4px 8px; /* Adjust padding for mobile */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .leadhistory {
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+    font-size: 20px; /* Slightly smaller font size */
+  }
+
+  .table table {
+    margin-top: 15px; /* Less margin on top */
+  }
+
+  .table th:first-child,
+  .table td:first-child,
+  .table th:last-child,
+  .table td:last-child {
+    padding-left: 10px; /* Adjust padding */
+    padding-right: 10px; /* Adjust padding */
+  }
+
+  .addexpense a {
+    padding: 0.4rem 0.8rem; /* Smaller padding for buttons */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  /* Make the delete button larger on small screens */
+  .delete-button {
+    width: 100%; /* Full width button */
+    margin-top: 10px; /* Space above the button */
+  }
+}

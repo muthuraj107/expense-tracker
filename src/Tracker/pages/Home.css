@@ -1,0 +1,231 @@
+.home-body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#fbd490, #f7a5cb);
+    overflow: hidden; /* Prevent overflow due to animations */
+}
+
+.home-head {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-body .home-head .head-logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 40px;
+}
+
+.home-head a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.btn {
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    outline-offset: 0.2rem;
+    text-transform: capitalize;
+}
+
+.btn1 {
+    margin-right: 40px;
+    padding: 0.3rem 1rem;
+    outline: 0.125rem solid whitesmoke;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.btn1:hover {
+    transform: scale(1.05); /* Scale up slightly */
+}
+
+.btn2 {
+    color: rgba(225, 225, 225, 1);
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.25rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    background-color: rgba(225, 20, 40, 0.5);
+    outline: 0.125rem solid rgba(225, 20, 20, 0.5);
+    outline-offset: 0.25rem;
+    padding: 0.7rem;
+    animation: bounce 2s ease infinite;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.btn2:hover {
+    background-color: rgba(225, 10, 10, 0.3);
+    transform: scale(1.05); /* Scale up slightly */
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.home-content {
+    text-align: center;
+    padding: 10px;
+    animation: fadeIn 0.5s ease; /* Fade in effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Slight downward slide */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home-content h1 {
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.home-content p {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 30px;
+}
+
+.content-logo img {
+    width: 100px;
+    height: 100px;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.home-card {
+    height: auto; /* Changed to auto for flexibility */
+    width: 100%;
+    margin-top: 53px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Added to wrap cards on smaller screens */
+}
+
+.home-card .card1 {
+    flex: 1; /* Allow cards to grow */
+    min-width: 250px; /* Minimum width for each card */
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.home-card .card1:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Elevate shadow */
+    transform: translateY(-5px); /* Slight lift */
+}
+
+.home-card .card1 > span {
+    font-size: 30px;
+    color: tomato;
+}
+
+.home-card .card1 > h4 {
+    font-size: 20px;
+}
+
+.home-card .card1 p {
+    font-size: 13px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 480px) {
+
+    .home-head .head-logo {
+        width: 50px; /* Smaller logo */
+        height: 50px; /* Smaller logo */
+    }
+
+    .home-head a {
+        margin-right: 20px; /* Remove margin on smaller screens */
+        margin-top: 10px; /* Add some spacing between items */
+    }
+
+    .btn1 {
+        margin: 10px 0; /* Centering and spacing */
+        padding: 0.5rem 1rem; /* Smaller padding */
+    }
+
+    .home-content {
+        padding: 5px; /* Less padding on smaller screens */
+    }
+
+    .home-content h1 {
+        font-size: 28px; /* Smaller font size */
+        line-height: 1.2; /* Adjust line height for better readability */
+    }
+
+    .home-content p {
+        font-size: 12px; /* Smaller font size */
+        padding-bottom: 20px; /* Adjust padding */
+    }
+
+    .content-logo img {
+        width: 80px; /* Smaller logo */
+        height: 80px; /* Smaller logo */
+    }
+
+    .home-card {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+    }
+
+    .home-card .card1 {
+        width: 90%; /* Full width for cards */
+        margin: 10px 0; /* Space between cards */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .home-card .card1 > span {
+        font-size: 24px; /* Smaller icon size */
+    }
+
+    .home-card .card1 > h4 {
+        font-size: 18px; /* Smaller heading size */
+    }
+
+    .home-card .card1 p {
+        font-size: 12px; /* Smaller paragraph text */
+    }
+
+    .btn2 {
+        font-size: 1rem; /* Smaller button text */
+        padding: 0.5rem; /* Adjust padding */
+    }
+}

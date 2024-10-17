@@ -1,0 +1,104 @@
+  
+  /* AddExpense Styles */
+  
+  .AddExpense {
+    background-color: whitesmoke;
+    width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    /* background-color: #fff; */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .section-body {
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .section-body h3 {
+    margin-bottom: 10px;
+  }
+  .section-body label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .section-body input[type='date']{
+    margin-bottom: 20px;
+     width: 300px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .section-body select,
+  .section-body input[type="text"] {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .section-body select:focus,
+  .section-body input[type="text"]:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Center the section-body container */
+  
+  .container {
+    background-color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .section-body {
+    height:auto;
+    margin: 0 auto;
+  }
+  .section-body button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .section-body button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+ .back-btn{
+    position: absolute;
+    top: 70px;
+    left: 40px;
+   }
+   
+   @media only screen and (max-width: 480px) {
+    .AddExpense {
+        width: 90%; /* Make it responsive */
+        margin: 20px auto; /* Reduce margin for mobile */
+        padding: 15px; /* Adjust padding */
+    }
+
+
+    .section-body label {
+        font-size: 14px; /* Smaller font size for labels */
+    }
+
+    .section-body h3 {
+        font-size: 20px; /* Smaller heading */
+    }
+
+    .back-btn {
+        display: none;
+    }
+}
